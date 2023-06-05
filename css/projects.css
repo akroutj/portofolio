@@ -29,7 +29,6 @@
     width: 450px;
     height: 300px;
     margin: 15px;
-    background-size: cover;
     overflow: hidden;
     animation-name: scale;
     background-color: white;
@@ -198,12 +197,17 @@
 
 @media screen and (max-width: 415px) {
 
+
+    .project__box__overlay-techno p {
+        flex-wrap: wrap;
+    }
+
     .project__box__overlay-techno p {
         font-size: 0.7rem;
     }
 
     .projects__title h2 {
-        font-size: 4rem;
+        font-size: 2rem;
     }
 
     .projects__title hr {
@@ -212,6 +216,10 @@
 
     .project-container {
         margin-top: 0px;
+    }
+
+    .work-box h3 {
+        font-size: 1.5rem;
     }
 
 

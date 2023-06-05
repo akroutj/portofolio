@@ -97,7 +97,7 @@
 }
 
  .interests__boxes-overlay h3 {
-     font-size: 5rem;
+     font-size: 2rem;
  }
 
 .ibo1 {
@@ -172,9 +172,9 @@
             margin-left: 20px;
         }
 
-        /* .interests__title h2 {
+        .interests__title h2 {
             font-size: 2rem; 
-        } */
+        }
 
         .interests__boxes-overlay {
             transform: translateY(0px);
