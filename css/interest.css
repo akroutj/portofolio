@@ -148,7 +148,6 @@
     
         .box1{
             grid-area: 1 / 1 / 2 / 2;
-            height: 400px;
         }
     
         .box2 {
@@ -174,6 +173,19 @@
         .interests__title {
             display: none;
         }
+
+        .interests__boxes-overlay {
+            height: 200px;
+            display: block;
+        }
+
+        .ibo1:active{
+            transform: translateY(250px);
+        }
+
+                .ibo2:active {
+                    transform: translateX(800px);
+                }
    
 }
 
