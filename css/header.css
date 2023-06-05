@@ -9,8 +9,6 @@ header {
     background-repeat: no-repeat;
 }
 
-
-
 /* MENU BAR */
 
 .menu {
@@ -58,8 +56,6 @@ header {
     color: var(--primary);
     border-top: 2px solid var(--primary);
 } 
-
-
 
 /* SOCIAL-ICON */
 
@@ -240,7 +236,6 @@ header {
                     color: var(--primary);
                     border-top: none;
                 }
-
 }
 
 @media screen and (max-width: 543px) {
@@ -256,10 +251,6 @@ header {
     .presentation {
          margin: 100px 10px 10px 10px;
     }
-
-    
-
-
 }
 
 
