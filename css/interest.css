@@ -137,12 +137,18 @@
             grid-template-rows: repeat(6, 1fr);
             grid-column-gap: 0px;
             grid-row-gap: 0px;
+            height: 1200px;
+        }
+
+        .interests__boxes * {
+            height: 200px;
         }
 
         
     
         .box1{
             grid-area: 1 / 1 / 2 / 2;
+            height: 400px;
         }
     
         .box2 {
@@ -164,10 +170,14 @@
         .box6 {
             grid-area: 6 / 1 / 7 / 2;
         }
+
+        .interests__title {
+            display: none;
+        }
    
 }
 
-@media screen and (max-width: 680px) {
+/* @media screen and (max-width: 680px) {
 
     .interests__title {
         display: none;
@@ -176,6 +186,6 @@
     .interests__boxes {
         display: flex;
         flex-direction: column;
-    }
-}
+    } */
+
 
