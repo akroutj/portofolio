@@ -365,13 +365,6 @@
     background-image: url(../public/tresorier.jpg);
 }
 
-@media screen and (max-width: 940px) {
-
-    /* .knowledge {
-        width: 100%;
-        margin: 0%;
-    } */
-}
 
 @media screen and (max-width: 950px) {
 
@@ -411,6 +404,11 @@
         height: 500px;
     }
 
+    .experiences-image {
+        margin-top: 10px;
+        font-size: 3rem;
+    }
+
     .card-back {
         flex-direction: column;
         padding: 20px;
@@ -418,9 +416,13 @@
         align-items: baseline;
     }
 
+    .card-back h2 {
+        font-size: 2rem;
+    }
+
     .card-back ul {
         width: 100%;
-        margin-top: 20px;
+        margin-top: 40px;
     }
 
     .info {
@@ -428,10 +430,19 @@
     }
 
     .card-back h2 {
+        display: flex;
         transform: rotate(0deg);
-        left: 10px;
+        left: 30px;
         top: 10px;
-        margin-bottom: 50px;
+        margin-bottom: 50px; 
+    }
+
+    .card__back-greyIcon {
+        opacity: 0;
+    }
+
+    .knowledge p {
+        color: var(--primary);
     }
 
     

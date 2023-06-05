@@ -187,17 +187,32 @@
         }
 }
 
-@media screen and (max-width: 960px) {
-/* 
-    .project__box {
-        width: 100%;
-    } */
-}
-
 @media screen and (max-width: 680px) {
 
     .projects__title {
         font-size: 3rem;
+        padding: 20px 0px 20px 0px;
         margin-left: 20px;
     }
+}
+
+@media screen and (max-width: 415px) {
+
+    .project__box__overlay-techno p {
+        font-size: 0.7rem;
+    }
+
+    .projects__title h2 {
+        font-size: 4rem;
+    }
+
+    .projects__title hr {
+        width: 30%;
+    }
+
+    .project-container {
+        margin-top: 0px;
+    }
+
+
 }

@@ -253,6 +253,23 @@ header {
     }
 }
 
+@media screen and (max-width: 415px) {
+
+    .presentation {
+        margin: 100px 10px 10px 10px;
+    }
+
+    .presentation h2  {
+        font-size: 1.5rem;
+    }
+
+    .presentation h1 {
+        font-size: 2rem;
+    }
+
+   
+}
+
 
 
 

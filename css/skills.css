@@ -157,3 +157,22 @@
     }
 }
 
+@media screen and (max-width: 415px) {
+
+    .carousel__card {
+       width: 90%;
+    }
+
+    .carousel__card-title, .carousel__card p {
+        color: var(--primary);
+    }
+
+    .skill-icon {
+        opacity: 1;
+    }
+
+    .skills__title h2 {
+        font-size: 2.5rem;
+    }
+}
+
