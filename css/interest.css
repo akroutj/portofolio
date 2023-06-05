@@ -132,11 +132,14 @@
 @media screen and (max-width: 948px) {
     
         .interests__boxes{
-            display: grid;
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            /* display: grid;
             grid-template-columns: 1fr;
             grid-template-rows: repeat(6, 1fr);
             grid-column-gap: 0px;
-            grid-row-gap: 0px;
+            grid-row-gap: 0px; */
             height: 1800px;
         }
 
@@ -144,7 +147,7 @@
             height: 300px;
         }
     
-        .box1{
+        /* .box1{
             grid-area: 1 / 1 / 2 / 2;
         }
     
@@ -166,7 +169,7 @@
     
         .box6 {
             grid-area: 6 / 1 / 7 / 2;
-        }
+        } */
 
         .interests__title {
             margin-left: 20px;
