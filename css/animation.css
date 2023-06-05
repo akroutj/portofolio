@@ -1,0 +1,53 @@
+/* ANIMATION SCROLL */
+
+.reveal {
+    opacity: 0;
+    transform: translateY(-50px);
+}
+
+.reveal-visible {
+    opacity: 1;
+    transform: translateY(0px);
+    transition: 1.2s cubic-bezier(0, .61, .5, 1);
+}
+
+/* Slide left to right */
+
+.left {
+    opacity: 0;
+    transform: translateX(-60px);
+}
+
+.left-visible {
+    opacity: 1;
+    transform: translateY(0px);
+    transition: 1.2s cubic-bezier(0, .61, .5, 1);
+}
+
+/* Slide right to left */
+
+.right {
+    opacity: 0;
+    transform: translateX(60px);
+}
+
+.right-visible {
+    opacity: 1;
+    transform: translateY(0px);
+    transition: 1.2s cubic-bezier(0, .61, .5, 1);
+}
+
+/* Animation profil card */
+
+/* .anim-card {
+    opacity: 0;
+    transform: translateX(-80px);
+    transform: rotate(0deg);
+}
+
+.anim-card-visible {
+    opacity: 1;
+    transform: translateY(0px);
+    transition: 1.5s cubic-bezier(0, .61, .5, 1);
+    transform: rotate(7deg);
+} */

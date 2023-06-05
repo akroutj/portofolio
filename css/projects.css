@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Ephesis&family=Montserrat:ital,wght@0,100;0,300;0,400;0,500;0,800;1,100&family=Playfair+Display+SC:wght@400;700&family=Roboto+Serif:ital,wght@0,100;0,200;1,100;1,300&display=swap');
+
+.projects {
+    background-color: var(--secondary);
+}
+
+.projects__title {
+    margin-left: 100px;
+}
+
+.projects__title > h2 {
+    font-size: 5rem;
+    color: var(--grey);
+}
+
+.project-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+/* PROJECT BOXES */
+
+.project__box {
+    position: relative;
+    box-shadow: 5px 5px 7px black; 
+    width: 450px;
+    height: 300px;
+    margin: 15px;
+    background-size: cover;
+    overflow: hidden;
+    animation-name: scale;
+    background-color: white;
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.project__box::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+}
+
+/* BOXES */
+
+.ohmyfood {
+    background-image: url("../public/jay.jpg");
+}
+
+.booki {
+    background-image: url("../public/aw.jpg");
+}
+
+.galactic {
+    background-image: url("../public/galactic.jpg");
+}
+
+.kanap {
+    background-image: url("../public/kanap.jpg");
+}
+
+.lachouette {
+    background-image: url("../public/la-chouette-agence-banniere.webp");
+}
+
+.piiquante {
+    background-image: url("../public/sauces-piquantes.webp");
+}
+
+.groupomania {
+    background-image: url("../public/teamwork.jpg");
+}
+
+.dead {
+    background-image: url("../public/DEAD.png");
+}
+
+/* WORK BOX */
+
+.work-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    color: white;
+    box-shadow: none;
+}
+
+.work-box>p {
+    color: var(--primary);
+    font-size: 2rem;
+}
+
+.work-box h3 {
+    font-size: 2rem;
+}
+
+
+.fa-lightbulb {
+    font-size: 3rem;
+    padding: 10px;
+}
+
+.work-line {
+    border-radius: 50%;
+}
+
+/* OVERLAY */
+
+.project__box:hover .project__box__overlay {
+    transform: translateY(0px);
+}
+
+.project__box__overlay {
+    position: absolute;
+    transform: translateY(250px);
+    transition: 0.3s;
+    padding: 0px 30px;
+    background-color: white;
+    width: 100%;
+    height: 400px;
+    text-align: center;
+    box-shadow: -2px -5px 12px -7px #000000;
+}
+
+.project__box__overlay h3 {
+    padding: 15px ;
+}
+
+.project__box__overlay-techno {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-bottom: 15px;
+}
+
+.project__box__overlay-techno  * {
+    border: 1px solid black;
+    font-size: 0.8rem;
+    padding: 5px 10px;
+    margin-right: 10px;
+    box-shadow: 1px 1px 10px lightgrey;
+}
+
+.project__box__overlay  p {
+    height: 30%;
+    display: flex;
+    align-items: center;
+}
+
+.project__box__overlay button {
+    background-color: var(--primary);
+}
+
+/* ANIMATION */
+
+@keyframes anim {
+    0% {
+        top: 450px;
+    }
+
+    100% {
+        top: 0px;
+    }
+}
+
+@media screen and (max-width: 1436px) {
+
+    .project__box {
+            width: 550px;
+        }
+}
+
+@media screen and (max-width: 1160px) {
+
+    .project__box {
+            width: 450px;
+        }
+}
+
+@media screen and (max-width: 960px) {
+/* 
+    .project__box {
+        width: 100%;
+    } */
+}
+
+@media screen and (max-width: 680px) {
+
+    .projects__title {
+        font-size: 3rem;
+        margin-left: 20px;
+    }
+}

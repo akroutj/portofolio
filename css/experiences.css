@@ -1,0 +1,442 @@
+
+.exp {
+    padding: 50px;
+    background-color: var(--secondary);
+}
+
+.exp__title {
+    margin-left: 50px;
+}
+
+.exp__title h2 {
+    font-size: 5rem;
+    color: var(--grey);
+}
+
+.cont {
+    display: flex;
+    flex-direction: row;
+}
+
+.boxes {
+    width: 70%;
+}
+
+
+
+.experiences-image {
+    color: white;
+    margin-left: 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 5rem;
+}
+
+.experiences-date {
+    color: white;
+    margin-left: 20px;
+}
+
+.experiences-subtitle {
+    color: white;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+.exp-line {
+    width: 10%;
+    margin-left: 20px;
+}
+
+.music {
+    height: 250px;
+    margin: 25px 0px;
+    width: 100%;
+    background-image: url(../public/bass-retro.jpg);
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.cook {
+    height: 250px;
+    width: 100%;
+    margin: 25px 0px;
+    background-image: url(../public/cook.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.tresorier {
+    height: 250px;
+    width: 100%;
+    margin: 25px 0px;
+    background-image: url(../public/tresorier.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.exp-box {
+    overflow: hidden;
+    position: relative;
+    box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.5);
+    transition-duration: 200ms;
+    border-radius: 10px;
+}
+
+.exp-box:hover {
+    box-shadow:none;
+    transform: scale(0.99);
+}
+
+.exp-overlay {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    transform: translateX(1450px);
+    transition: 0.3s;
+    padding: 0px 30px;
+    background: rgb(238, 174, 202);
+    background: linear-gradient(81deg, rgba(238, 174, 202, 0) 0%, rgba(0, 0, 0, 0.7) 58%);
+    width: 100%;
+    height: 250px;
+}
+
+.exp-box:hover>.exp-overlay {
+    transform: translateX(0px);
+}
+
+.exp-box:hover>.exp-overlay-left {
+    transform: translateX(0px);
+}
+
+.txt-overlay {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    right: 0;
+    position: fixed;
+    align-items: center;
+}
+
+.txt-overlay > ul> li {
+    padding: 5px;
+}
+
+.txt-overlay-left {
+    left: 0;
+}
+
+.txt-overlay-line {
+    height: 2px;
+    border-radius: 50%;
+    background-color: white;
+    width: 50%;
+}
+
+/* KNOWLEDGE */
+
+.knowledge {
+    position: relative;
+    margin: 25px 0 25px 25px;
+    border-radius: 10px;
+    background-color: var(--secondary);
+    box-shadow: var(--neoShadow);
+    width: 30%;
+    color: white;
+    overflow: hidden;
+}
+
+.knowledge__title {
+    color: white;
+    font-weight: 300;
+    margin: 15px 0 0 20px;
+    /* position: absolute;
+    left: 20px;
+    top: 15px; */
+}
+
+.knowledge__bar {
+    margin: 10px 0 0 20px;
+    /* position: absolute; */
+    /* top: 50px;
+    left: 20px; */
+    height: 3px;
+    width: 80px;
+}
+
+.emptybar {
+    /* position: absolute; */
+    background-color: var(--primary);
+    width: 100%;
+    height: 100%;
+}
+
+.filledbar {
+    /* top: 0px; */
+    z-index: 3;
+    width: 0px;
+    height: 100%;
+    background: var(--secondary);
+    transition: all 0.6s ease-out;
+}
+
+.knowledge:hover .filledbar {
+    width: 100%;
+    transition: 0.4s ease-out;
+}
+
+.knowledge:hover .knowledge__title {
+    font-size: 1.5rem;
+    color: var(--primary);
+    filter: drop-shadow(0px 5px 2px rgba(0, 0, 0, 1));
+    transition: all 0.6s ease-out;
+}
+
+.knowledge__ul {
+    list-style: none;
+    margin: 30px 0 30px 30px;
+    width: 50%;
+}
+
+.knowledge__ul li {
+    padding: 13px 15px;
+    color: white;
+}
+
+.knowledge__ul li::marker {
+    content: '>>';
+    color: var(--primary);
+    font-family: cursive;
+}
+
+.txt-overlay ul {
+    width: 80%;
+}
+
+.knowledge p {
+    font-family: 'Playfair Display SC';
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    position: absolute;
+    font-size: 8rem;
+    right: -376px;
+    color: var(--grey);
+    transform: rotate(270deg);
+    bottom: 320px;
+}
+
+.knowledge:hover p {
+    color: var(--primary);
+}
+
+/* FLIP CARD */
+
+.card {
+    transform-style: preserve-3d;
+    perspective: 600px;
+    transition: .5s;
+    border-radius: 10px;
+    height: 250px;
+    width: 100%;
+    margin: 25px 0px;
+}
+
+.card:hover .card-front {
+    transform: rotateX(-180deg);
+}
+
+.card:hover .card-back {
+    transform: rotateX(0deg);
+}
+
+.card-front {
+    height: 100%;
+    width: 100%;
+    background-image: url(../public/cook.jpg);
+    background-position: 50% 50%;
+    background-size: cover;
+    position: absolute;
+    box-shadow: var(--neoShadow);
+    top: 0;
+    left: 0;
+    backface-visibility: hidden;
+    transform: rotateX(0deg);
+    transition: .5s;
+    border-radius: 10px;
+}
+
+.card-back {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--secondary);
+    box-shadow: var(--neoShadow);
+    backface-visibility: hidden;
+    transform: rotateX(180deg);
+    transition: .5s;
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+
+
+.card-back ul li::marker {
+    content: '>>';
+    color: var(--primary);
+    font-family: cursive;
+}
+
+.card-back ul li {
+    padding: 5px 10px;
+
+}
+
+.card-back ul {
+    width: 40%;
+}
+
+.fa-compact-disc {
+    position: absolute;
+    font-size: 13rem;
+    top: 20px;
+    right: -100px;
+    color: var(--grey);
+    transform: rotate(-30deg);
+}
+
+.card__back-greyIcon {
+    position: absolute;
+    font-size: 13rem;
+    top: 20px;
+    right: -100px;
+    color: var(--grey);
+}
+
+.fa-bowl-rice {
+    transform: rotate(-50deg);
+}
+
+.fa-hotdog {
+    transform: rotate(45deg);
+}
+
+.fa-plane, .fa-calendar {
+    color: var(--primary);
+    padding: 10px;
+}
+
+.location, .date {
+    display: flex;
+    align-items: center;
+    font-size: 1.3rem;
+}
+
+.info {
+    width: 35%;
+    margin-left: 10%;
+}
+
+.card-back h2 {
+    transform: rotate(-90deg);
+    color: var(--primary);
+    position: absolute;
+    font-size: 2.5rem;
+    left: -110px;
+}
+
+.music-front {
+    background-image: url(../public/bass-retro.jpg);
+}
+
+.cook-front {
+    background-image: url(../public/cook.jpg);
+}
+
+.treasurer-front {
+    background-image: url(../public/tresorier.jpg);
+}
+
+@media screen and (max-width: 940px) {
+
+    /* .knowledge {
+        width: 100%;
+        margin: 0%;
+    } */
+}
+
+@media screen and (max-width: 950px) {
+
+    .exp {
+        padding: 10px;
+    }
+    
+    .cont {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .boxes {
+        width: 100%;
+    }
+
+    .knowledge {
+        width: 100%;
+        margin: 0%;
+    }  
+}
+
+@media screen and (max-width: 680px) {
+
+    .exp__title {
+        display: none;
+    }
+
+    .experiences-image {
+        font-size: 4rem;
+    }
+}
+
+@media screen and (max-width: 415px) {
+
+    .card {
+        height: 500px;
+    }
+
+    .card-back {
+        flex-direction: column;
+        padding: 20px;
+        justify-content: center;
+        align-items: baseline;
+    }
+
+    .card-back ul {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .info {
+        width: 100%;
+    }
+
+    .card-back h2 {
+        transform: rotate(0deg);
+        left: 10px;
+        top: 10px;
+        margin-bottom: 50px;
+    }
+
+    
+}
+
+
+
+

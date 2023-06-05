@@ -1,0 +1,107 @@
+
+@import url("css/header.css");
+@import url("css/about.css");
+@import url("css/interest.css");
+@import url("css/experiences.css");
+@import url("css/footer.css");
+@import url("css/projects.css");
+@import url("css/animation.css");
+@import url("css/skills.css");
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+body, * {
+    margin: 0;
+    padding: 0;
+    font-family: 'montserrat', serif;
+    box-sizing: border-box;  
+    position: relative;
+}
+
+:root {
+    --primary: #fec529;
+    --secondary: #1b1e25;
+    --grey: rgb(255, 255, 255, 0.3);
+    --neoShadow: 4px 4px 16px rgba(0, 0, 0, 0.5),
+        -4px -4px 16px rgba(255, 255, 255, 0.05);
+}
+
+h1, h2, h3, a {
+    font-family: 'Playfair Display SC';
+}
+
+h2 {
+    font-size: 3rem;
+    color: var(--grey);
+}
+
+hr {
+    border: none;
+    background-color: var(--primary);
+    border-radius: 10px;
+    height: 3px;
+    margin: 5px 0px;
+    width: 200px;
+    filter: drop-shadow(2px 4px 6px black);
+}
+
+a:visited, a {
+    text-decoration: none;
+}
+
+button {
+    margin: 20px;
+    padding: 10px 20px;
+    border: none;
+    /* box-shadow: 1px 1px 10px lightgrey; */
+    background-color: var(--primary);
+    cursor: pointer;
+    font-family: 'Playfair Display SC';
+    transition-duration: 200ms;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+/* BUTTON back to top */
+
+#topBtn {
+    display: none;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: 99;
+    color: white;
+    cursor: pointer;
+}
+
+.fa-arrow-up {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+
+/* fffffffffffffffffffff */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

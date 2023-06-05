@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akrout Julian - Portofolio</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://kit.fontawesome.com/fd74157818.js"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Ephesis&family=Montserrat:ital,wght@0,100;0,300;0,400;0,500;0,800;1,100&family=Playfair+Display+SC:wght@400;700&family=Roboto+Serif:ital,wght@0,100;0,200;1,100;1,300&display=swap"
+        rel="stylesheet">
+
+    <script defer src="index.js"></script>
+    <link rel="icon" href="public\favicon-16x16.png" />
+</head>
+
+<body>
+
+    <i onclick="topFunction()" id="topBtn" title="Go to top" class="fas fa-arrow-up" style="color: #ffffff;"></i>
+    <header>
+        <div class="menu">
+            <img class="menu__logo" src="public/logo-white.png" alt="logo">
+            <div class="burger-menu">
+                <input id="menu-toggle" type="checkbox" />
+                <label class="menu-button" for="menu-toggle">
+                    <span></span>
+                </label>
+
+                <ul class="menu-box">
+
+                    <li><a class="menu-box-item" href="#skills-anchor">compétences</a></li>
+                    <li><a class="menu-box-item" href="#project-anchor">projets</a></li>
+                    <li><a class="menu-box-item" href="#experiences-anchor">expériences</a></li>
+                    <li><a class="menu-box-item" href="#interests-anchor">intérêts</a></li>
+                    <li><a href="https://www.linkedin.com/in/julian-akrout/"><i
+                                class="social-icon fab fa-linkedin-in"></i></a></li>
+                    <li><a href="https://github.com/akroutj?tab=repositories"><i
+                                class="social-icon fab fa-github"></i></a></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="presentation left">
+            <hr class="presentation__line">
+            <p>Bienvenue, je m'appelle Julian AKROUT et je suis</p>
+            <h2>Intégrateur / Développeur front-end</h1>
+                <p>Je recherche activement une alternance en tant que </p>
+                <h1>WEB DESIGNER</h1>
+        </div>
+
+        <div class="stack">
+            <div class="stack__card">
+                <i class="stack__card-icon fas fa-pencil-ruler"></i>
+                <p>Web design</p>
+            </div>
+            <div class="stack__card">
+                <i class="stack__card-icon fas fa-code"></i>
+                <p>Front-end</p>
+            </div>
+            <div class="stack__card">
+                <i class="stack__card-icon fas fa-clipboard-check"></i>
+                <p>Réferencement naturel</p>
+            </div>
+            <div class="stack__card">
+                <i class="stack__card-icon fas fa-mobile-alt"></i>
+                <p>Mobile first</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- A PROPOS DE MOI -->
+
+    <div class="about">
+        <div class="about__card">
+            <div class="about__card-image">
+                <img class="profil-image" src="public/moi.jpg" alt="">
+            </div>
+            <div class="about__card-description">
+                <p>AKROUT Julian</p>
+                <p>34 ans</p>
+                <P>Rezé 44400</P>
+                <button><a href="./public/cvAkroutJulian.pdf" download="newfilename">Télécharger mon
+                        CV</a>
+                </button>
+            </div>
+        </div>
+        <div class="about__text">
+            <h2 id="about-anchor" class="reveal">À PROPOS DE MOI</h2>
+            <hr>
+            <p class="left">Étudiant en Bachelor Webdesign 2023-2024 à MyDigitalSchool, je recherche actuellement une
+                entreprise en tant que graphiste web designer. Ce serait un véritable souhait pour moi d'intégrer une
+                entreprise dynamique et innovante.</p>
+            <p class="left">Titulaire d'un diplôme RNCP développeur web, j'ai acquis des compétences solides et je serai
+                ravi de me
+                spécialiser en
+                tant que web designer.</p>
+            <p class="left">Passionné par le street art le dessin, et la bande dessinée, je suis déterminer pour réussir
+                dans cette
+                nouvelle voie. Mes expériences en France comme à l'étranger m'ont permis d'acquérir une grande capacité
+                d'adaptation.
+                La création artistique, qu'elle soit musicale, littéraire ou culinaire, à toujours été au centre de tout
+                mes
+                projets. D'untempérament sociable et fédérateur, je privilégie toujours le travail d'équipe, en espérant
+                rejoindre la
+                votre.</p>
+            <div class="about__text__mailto left">
+                <p>Contactez-moi !</p>
+                <a href="mailto:akrout.julian@gmail.com">
+                    <div class="about__text__mailto-icon">
+                        <i class="fas fa-light fa-envelope"></i>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- MES COMPETENCES -->
+
+    <div id="skills-anchor" class="skills">
+        <div class="skills__title">
+            <h2 class="reveal">Compétences</h2>
+            <hr>
+        </div>
+        <div class="carousel right">
+            <div class="carousel__card">
+                <h3 class="carousel__card-title">Front-end</h3>
+                <div class="carousel__card-bar">
+                    <div class="emptybar"></div>
+                    <div class="filledbar"></div>
+                </div>
+                <ul class="carousel__card-ul">
+                    <li>HTML5</li>
+                    <li>CSS3</li>
+                    <li>JavaScript</li>
+                    <li>Sass</li>
+                    <li>React</li>
+                </ul>
+                <i class="fas fa-code skill-icon"></i>
+                <p>1</p>
+            </div>
+            <div class="carousel__card">
+                <h3 class="carousel__card-title">Web-design</h3>
+                <div class="carousel__card-bar">
+                    <div class="emptybar"></div>
+                    <div class="filledbar"></div>
+                </div>
+                <ul class="carousel__card-ul">
+                    <li>Figma</li>
+                    <li>Krita</li>
+                    <li>Photoshop</li>
+                    <li>Illustator</li>
+                    <li>Canva</li>
+                </ul>
+                <i class="fas fa-pencil-ruler skill-icon"></i>
+                <p>2</p>
+            </div>
+            <div class="carousel__card">
+                <h3 class="carousel__card-title">Back-end</h3>
+                <div class="carousel__card-bar">
+                    <div class="emptybar"></div>
+                    <div class="filledbar"></div>
+                </div>
+                <ul class="carousel__card-ul">
+                    <li>NodeJs</li>
+                    <li>Express</li>
+                    <li>MongoDB</li>
+                    <li>Mangoose</li>
+                    <li>Postman</li>
+                </ul>
+                <i class="fas fa-database skill-icon"></i>
+                <p>3</p>
+            </div>
+            <div class="carousel__card">
+                <h3 class="carousel__card-title">Outils</h3>
+                <div class="carousel__card-bar">
+                    <div class="emptybar"></div>
+                    <div class="filledbar"></div>
+                </div>
+                <ul class="carousel__card-ul">
+                    <li>Visual Studio</li>
+                    <li>GitHub</li>
+                    <li>MongoDB</li>
+                </ul>
+                <i class="fas fa-toolbox skill-icon"></i>
+                <p>4</p>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- MES PROJECTS -->
+
+    <div id="project-anchor" class="projects">
+        <div class="projects__title">
+            <h2>Projets</h2>
+            <hr>
+        </div>
+        <div class="project-container">
+            <div class="project__box ohmyfood left">
+                <div class="project__box__overlay">
+                    <h3>HO MY FOOD</h3>
+                    <div class="project__box__overlay-techno">
+                        <p>HTML</p>
+                        <p>CSS</p>
+                        <p>Sass</p>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime tenetur exercitationem
+                        repellat
+                        voluptas pariatur maiores accusantium, nobis ullam provident eius beatae veniam, quo debitis
+                        laboriosam excepturi necessitatibus corrupti quasi? Itaque?</p>
+                    <button onclick="window.location.href='https://akroutj.github.io/OhMyFood-AnimationCSS-/'">Voir le
+                        site</button>
+                </div>
+            </div>
+
+            <div class="project__box booki reveal">
+                <div class="project__box__overlay">
+                    <h3>BOOKI</h3>
+                    <div class="project__box__overlay-techno">
+                        <p>HTML</p>
+                        <p>CSS</p>
+                        <p>Figma</p>
+                    </div>
+                    <p>Intégration d'un site de réservation de logemement</p>
+                    <button onclick="
+                            window.location.href='https://akroutj.github.io/Booki-integrationWeb-/'">Voir le
+                        site</button>
+                </div>
+            </div>
+
+            <div class=" project__box galactic right">
+                <div class="project__box__overlay">
+                    <h3>GALACTIC EMPIRE</h3>
+                    <div class="project__box__overlay-techno">
+                        <p>HTML</p>
+                        <p>CSS</p>
+                    </div>
+                    <p>Site vitrine parodique de l'empire galactique basé sur celui du recrutement de l'armée de terre
+                    </p>
+                    <button onclick="
+                                    window.location.href='https://akroutj.github.io/OhMyFood-AnimationCSS-/'">Voir le
+                        site</button>
+                </div>
+            </div>
+
+            <div class=" project__box kanap left">
+                <div class="project__box__overlay">
+                    <h3>Kanap</h3>
+                    <div class="project__box__overlay-techno">
+                        <p>JavaScript</p>
+                        <p>HTML</p>
+                        <p>CSS</p>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime tenetur
+                        exercitationem
+                        repellat
+                        voluptas pariatur maiores accusantium, nobis ullam provident eius beatae veniam,
+                        quo
+                        debitis
+                        laboriosam excepturi necessitatibus corrupti quasi? Itaque?</p>
+                    <button onclick="window.location.href='https://akroutj.github.io/Booki-integrationWeb-/'">Voir
+                        le
+                        site</button>
+                </div>
+            </div>
+
+            <div class="project__box lachouette reveal">
+                <div class="project__box__overlay">
+                    <h3>LA CHOUETTE AGENCE</h3>
+                    <div class="project__box__overlay-techno">
+                        <p>Lighthouse</p>
+                        <p>GTmetrix</p>
+                        <p>Wave-WabAim</p>
+                        <p>W3C</p>
+                    </div>
+                    <p>Audit du site et SEO. Optimisation de l'accessibilité et du référencement</p>
+                    <button onclick="window.location.href='https://akroutj.github.io/OhMyFood-AnimationCSS-/'">Voir
+                        le
+                        site</button>
+                </div>
+            </div>
+
+            <div class="project__box groupomania right">
+                <div class="project__box__overlay">
+                    <h3>GROUPOMANIA</h3>
+                    <div class="project__box__overlay-techno">
+                        <p>React</p>
+                        <p>CSS</p>
+                        <P>MongoDB</P>
+                        <P>Mongoose</P>
+                        <P>Express</P>
+                    </div>
+                    <p>Le projet consiste à construire un réseau social interne pour les employés de
+                        Groupomania. Le
+                        but
+                        de cet outil est de
+                        faciliter les interactions entre collègues. Le département RH de Groupomania a
+                        imaginé
+                        plusieurs
+                        fonctionnalités pour
+                        favoriser les échanges entre collègues.</p>
+                    <button onclick="window.location.href='https://akroutj.github.io/Booki-integrationWeb-/'">Voir
+                        le
+                        site</button>
+                </div>
+            </div>
+
+            <div class="project__box piiquante left">
+                <div class="project__box__overlay">
+                    <h3>PIIQUANTE</h3>
+                    <div class="project__box__overlay-techno">
+                        <P>Node.js</P>
+                        <P>MongoDB</P>
+                        <P>Mongoose</P>
+                        <P>Express</P>
+                    </div>
+                    <p>Construction d'une API en backend pour le site HOT TAKES qui est une galerie de
+                        sauces
+                        permettant
+                        aux utilisateurs de
+                        télécharger leurs sauces piquantes préférées et de liker ou disliker les sauces que
+                        d'autres
+                        partagent. Le front-end de
+                        l'application a été développé au préalable et a été précompilé après des tests
+                        internes.</p>
+                    <button onclick="window.location.href='https://akroutj.github.io/OhMyFood-AnimationCSS-/'">Voir
+                        le
+                        site</button>
+                </div>
+            </div>
+
+            <div class="project__box dead reveal">
+                <div class="project__box__overlay">
+                    <h3>DEAD OR NOT</h3>
+                    <div class="project__box__overlay-techno">
+                        <P>JavaScript</P>
+                        <P>HTML</P>
+                        <P>CSS</P>
+                    </div>
+                    <p>Petit jeu morbide sur les séries TV et les sagas du cinéma. Le concept est simple ! Vous devez
+                        trouver tout les
+                        personnages décédés. Ne vous trompez pas ! ou vous les rejoindrez dans l'au-delà</p>
+                    <button>Bientot dispo</button>
+                </div>
+            </div>
+
+            <div class="project__box work-box right">
+                <i class="fas fa-lightbulb fa-shake" style="color: #fec529;"></i>
+                <h3>Work in progress</h3>
+                <p>..............</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- EXPERIENCES -->
+
+    <div id="experiences-anchor" class="exp">
+        <div class="exp__title">
+            <h2 class="reveal">Expériences</h2>
+            <hr>
+        </div>
+        <div class="cont">
+            <div class="boxes">
+                <div class="card">
+                    <div class="card-front music-front">
+                        <p class="experiences-image left">MUSICIEN</p>
+                    </div>
+                    <div class="card-back">
+                        <h2>EXPERIENCE</h2>
+                        <div class="info">
+                            <div class="location">
+                                <i class="fas fa-plane"></i>
+                                <p>France & Suisse</p>
+                            </div>
+                            <div class="date">
+                                <i class="far fa-calendar"></i>
+                                <p>2015 à 2020</p>
+                            </div>
+                        </div>
+
+                        <ul>
+                            <li>Auteur & compositeur</li>
+                            <li>Bassiste, guitariste & chanteur</li>
+                            <li>Metteur en scène</li>
+                            <li>Organisateur événementiel</li>
+                            <li>Responsable administratif</li>
+                        </ul>
+                        <i class=" card__back-greyIcon fas fa-compact-disc"></i>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-front treasurer-front">
+                        <p class="experiences-image left">TRESORIER</p>
+                    </div>
+                    <div class="card-back">
+                        <h2>EXPERIENCE</h2>
+                        <div class="info">
+                            <div class="location">
+                                <i class="fas fa-plane"></i>
+                                <p>France</p>
+                            </div>
+                            <div class="date">
+                                <i class="far fa-calendar"></i>
+                                <p>2018 à 2020</p>
+                            </div>
+                        </div>
+
+                        <ul>
+                            <li>Association culturelle</li>
+                            <li>Comptabilité et financement</li>
+                            <li>Graphiste/maquettiste</li>
+                            <li>Accompagnement pour les artistes</li>
+                            <li>Organisateur événementiel</li>
+                            <li>Slams poésies, concerts et expositions</li>
+                        </ul>
+                        <i class="card__back-greyIcon fas fa-receipt"></i>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-front cook-front">
+                        <p class="experiences-image left">CUISINIER</p>
+
+                    </div>
+                    <div class="card-back">
+                        <h2>EXPERIENCE</h2>
+                        <div class="info">
+                            <div class="location">
+                                <i class="fas fa-plane"></i>
+                                <p>France & Australie</p>
+                            </div>
+                            <div class="date">
+                                <i class="far fa-calendar"></i>
+                                <p>2005 à 2015</p>
+                            </div>
+                        </div>
+
+                        <ul>
+                            <li>Concevoir les cartes et les menus</li>
+                            <li>Gestion des achats et des stocks</li>
+                            <li>Former, encadrer et animer une équipe</li>
+                            <li>Endurance mentale et physique</li>
+                            <li>Gestion de la pression et du stress</li>
+                        </ul>
+                        <i class="card__back-greyIcon fas fa-hotdog"></i>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div class="knowledge right">
+                <p>MES.APTITUDES</p>
+                <h3 class="knowledge__title">Soft-skills</h3>
+                <div class="knowledge__bar">
+                    <div class="emptybar"></div>
+                    <div class="filledbar"></div>
+                </div>
+                <ul class="knowledge__ul">
+                    <li>Leadership</li>
+                    <li>Fédérateur</li>
+                    <li>Diplomate</li>
+                    <li>Créatif</li>
+                    <li>Social</li>
+                </ul>
+                <h3 class="knowledge__title">Langues</h3>
+                <div class="knowledge__bar">
+                    <div class="emptybar"></div>
+                    <div class="filledbar"></div>
+                </div>
+                <ul class="knowledge__ul">
+                    <li>Français</li>
+                    <li>Anglais</li>
+                </ul>
+                <h3 class="knowledge__title">Diplomes</h3>
+                <div class="knowledge__bar">
+                    <div class="emptybar"></div>
+                    <div class="filledbar"></div>
+                </div>
+                <ul class="knowledge__ul">
+                    <li>RNCP Développeur web</li>
+                    <li>DAEU</li>
+                    <li>BEP Hotellerie</li>
+                </ul>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- MES INTERETS -->
+
+    <div id="interests-anchor" class="interests">
+        <div class="interests__title">
+            <h2 class="reveal">Centres d'interet</h2>
+            <hr>
+        </div>
+
+        <div class="interests__boxes reveal">
+            <div class="box1">
+                <div class="interests__boxes-overlay ibo1">
+                    <h3>Travaux</h3>
+                    <p>rénovation & bricolage</p>
+                </div>
+            </div>
+            <div class="box2">
+                <div class="interests__boxes-overlay ibo2">
+                    <h3>Dessin</h3>
+                    <p>street art & graffiti</p>
+                </div>
+            </div>
+            <div class="box3">
+                <div class="interests__boxes-overlay ibo3">
+                    <h3>Mytholgie</h3>
+                    <p>grecque</p>
+                </div>
+            </div>
+            <div class="box4">
+                <div class="interests__boxes-overlay ibo4">
+                    <h3>Bande dessinée</h3>
+                    <p>comics & roman graphique</p>
+                </div>
+            </div>
+            <div class="box5">
+                <div class="interests__boxes-overlay ibo5">
+                    <h3>Littérature</h3>
+                    <p>fantastique</p>
+                </div>
+            </div>
+            <div class="box6">
+                <div class="interests__boxes-overlay ibo6">
+                    <h3>Documentaire</h3>
+                    <p>histoire & société</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+
+    <footer>
+        <img class="footer__logo" src="./public/logo-white.png" alt="logo akju noir et blanc">
+        <div class="footer__text">
+            <p>Julian AKROUT © 2023</p>
+            <p>Tous droits réservés</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

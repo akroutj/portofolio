@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Ephesis&family=Montserrat:ital,wght@0,100;0,300;0,400;0,500;0,800;1,100&family=Playfair+Display+SC:wght@400;700&family=Roboto+Serif:ital,wght@0,100;0,200;1,100;1,300&family=Shadows+Into+Light&display=swap');
+
+.about {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    background-color: var(--secondary);
+}
+
+/* PROFIL CARD */
+
+
+.about__card {
+    /* width: 400px; */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: var(--neoShadow)
+}
+
+.about__card-image {
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.profil-image {
+    width: 300px;
+    transition: 300ms;
+}
+
+.profil-image:hover {
+    transform: scale(1.1) rotate(10deg);
+}
+
+.about__card-description {
+    font-size: 1.4rem;
+    padding: 20px 0px;
+    text-align: center;
+}
+
+.about__card-description > p {
+    margin-top: 10px;
+    color: white;
+}
+
+
+/* DESCRIPTION TEXT */
+
+
+.about__text {
+    padding: 40px;
+}
+
+.about__text > h2 {
+    font-size: 5rem; 
+}
+
+.about__text > p {
+    margin-top: 30px;
+    color: white;
+    text-align: justify;
+}
+
+
+/* CONTACT */
+
+.about__text__mailto {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.about__text__mailto p {
+    margin-right: 20px;
+    font-size: 1.5rem;
+    color: var(--grey);
+}
+
+a {
+    color: black;
+}
+
+.about__text__mailto-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary);
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    transition-duration: 200ms;
+}
+
+.about__text__mailto-icon:hover {
+    transform: scale(1.1);
+}
+
+@media screen and (max-width: 902px) {
+
+    .about {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .about__text {
+        padding: 0;
+    }
+
+    .about__text>h2 {
+        margin-left: 20px;
+    }
+
+    .about__text>hr {
+         margin-left: 20px;
+    }
+
+    .about__text__mailto {
+        margin-left: 20px;
+    }
+
+    .about__card {
+        margin: 20px 0;
+    }
+}
+
+@media screen and (max-width: 680px) {
+
+    #about-anchor {
+        font-size: 4rem;
+    }
+
+}
+
+
+
+
+
+
+
+
