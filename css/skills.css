@@ -16,7 +16,7 @@
 .carousel {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
 }
 
 .carousel__card {
@@ -143,6 +143,10 @@
 
 @media screen and (max-width: 902px) {
 
+    .carousel {
+        flex-wrap: wrap;
+    }
+    
     .carousel__card {
         margin: 20px 0;
     }
@@ -159,8 +163,14 @@
 
 @media screen and (max-width: 415px) {
 
+    .carousel { 
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
     .carousel__card {
-       width: 90%;
+        width: 80%;
     }
 
     .carousel__card-title, .carousel__card p {
