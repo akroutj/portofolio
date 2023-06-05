@@ -14,6 +14,10 @@
 
 .about__card {
     /* width: 400px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     padding: 30px;
     border-radius: 10px;
     box-shadow: var(--neoShadow)
@@ -129,6 +133,21 @@ a {
 
     #about-anchor {
         font-size: 4rem;
+    }
+}
+
+@media screen and (max-width: 315px) {
+
+    #about-anchor {
+        font-size: 2rem;
+    }
+
+    .about__text__mailto {
+        flex-direction: column;
+    }
+
+    .about__text__mailto-icon {
+        margin-top: 15px;
     }
 
 }
