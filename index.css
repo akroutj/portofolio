@@ -9,8 +9,12 @@
 @import url("css/skills.css");
 
 
-/* html {
+html {
     scroll-behavior: smooth;
+}
+
+/* * {
+    box-shadow:  0 0 0 3px red;
 } */
 
 body, * {

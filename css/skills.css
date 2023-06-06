@@ -128,6 +128,7 @@
     left: 175px;
     opacity: 0;
     font-size: 25rem;
+    width: 50%;
 }
 
 .carousel__card:hover .skill-icon {
@@ -182,7 +183,11 @@
     }
 
     .skills__title h2 {
-        font-size: 2.5rem;
+        font-size: 1.5rem;
+    }
+
+    .skills__title hr {
+        width: 50%;
     }
 }
 

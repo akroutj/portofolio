@@ -389,16 +389,25 @@
 
 @media screen and (max-width: 680px) {
 
-    .exp__title {
-        display: none;
-    }
-
     .experiences-image {
         font-size: 4rem;
     }
+
+        .exp__title h2 {
+            font-size: 2rem;
+        }
 }
 
 @media screen and (max-width: 415px) {
+
+
+    .exp__title h2 {
+        font-size: 1.5rem;
+    }
+
+    .exp__title hr {
+        width: 50%;
+    }
 
     .card {
         height: 500px;

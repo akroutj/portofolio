@@ -179,6 +179,10 @@
             font-size: 2rem; 
         }
 
+        .interests__title hr {
+            width: 50%;
+        }
+
         .interests__boxes-overlay {
             transform: translateY(0px);
             transform: translateX(0px);
