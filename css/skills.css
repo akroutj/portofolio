@@ -147,7 +147,7 @@
         flex-wrap: wrap;
     }
     
-    /* .carousel__card {
+    .carousel__card {
         margin: 20px 0;
     }
 
@@ -158,7 +158,7 @@
 
     .skills__title h2 {
         font-size: 2rem;
-    } */
+    }
 }
 
 @media screen and (max-width: 415px) {
@@ -182,7 +182,7 @@
     }
 
     .skills__title h2 {
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
 
     .skills__title hr {

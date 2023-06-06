@@ -395,15 +395,19 @@
     }
 
     .exp__title h2 {
-        font-size: 2rem;
+        font-size: 3rem;
     }
 }
 
 @media screen and (max-width: 415px) {
 
 
+    .exp__title {
+        margin-left: 20px;
+    }
+
     .exp__title h2 {
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
 
     .exp__title hr {
@@ -416,7 +420,6 @@
 
     .experiences-image {
         margin-top: 10px;
-        font-size: 2rem;
     }
 
     .card-back {
@@ -454,9 +457,17 @@
     .knowledge p {
         color: var(--primary);
     }
-
     
 }
+
+@media screen and (max-width: 350px) {
+
+    .experiences-image {
+            font-size: 2rem;
+        }
+
+}
+
 
 
 

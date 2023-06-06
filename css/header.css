@@ -170,9 +170,8 @@ header {
                 }
         
                 .menu-button {
-                    display: none;
                     position: fixed;
-                    top: 30px;
+                    top: 40px;
                     right: 20px;
                     width: 26px;
                     height: 26px;
@@ -267,11 +266,6 @@ header {
     .presentation h1 {
         font-size: 2rem;
     }
-
-    .menu-button {
-        display: none;
-    }
-
    
 }
 

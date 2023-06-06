@@ -13,7 +13,6 @@
 
 
 .about__card {
-    /* width: 400px; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -101,6 +100,10 @@ a {
     transform: scale(1.1);
 }
 
+
+/* MEDIA QUERIES */
+
+
 @media screen and (max-width: 902px) {
 
     .about {
@@ -112,11 +115,11 @@ a {
         padding: 0;
     }
 
-    .about__text>h2 {
+    .about__text h2 {
         margin-left: 20px;
     }
 
-    .about__text>hr {
+    .about__text hr {
          margin-left: 20px;
     }
 
@@ -138,15 +141,25 @@ a {
 
 @media screen and (max-width: 415px) {
 
-    .about__card {
-        display: none;
-    }
+    .about__card-image {
+           width: 200px;
+           height: 200px;
+        }
+    
+        .profil-image {
+            width: 200px;
+        }
+   
 }
 
 @media screen and (max-width: 315px) {
 
     #about-anchor {
         font-size: 2rem;
+    }
+
+    .about__text hr {
+        width: 50%;
     }
 
     .about__text__mailto {

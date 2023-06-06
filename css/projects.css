@@ -132,7 +132,7 @@
 }
 
 .project__box__overlay h3 {
-    padding: 15px ;
+    padding: 15px 0px ;
 }
 
 .project__box__overlay-techno {
@@ -172,6 +172,8 @@
     }
 }
 
+/* MEDIA QUERIES */
+
 @media screen and (max-width: 1436px) {
 
     .project__box {
@@ -196,6 +198,9 @@
 
 @media screen and (max-width: 415px) {
 
+    .project__box__overlay h3 {
+        font-size: 1rem;
+    }
 
     .project__box__overlay-techno p {
         flex-wrap: wrap;
