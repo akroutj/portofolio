@@ -170,7 +170,6 @@ header {
                 }
         
                 .menu-button {
-                    display: none;
                     position: fixed;
                     top: 30px;
                     right: 20px;

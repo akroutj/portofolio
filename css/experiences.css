@@ -393,9 +393,9 @@
         font-size: 4rem;
     }
 
-        .exp__title h2 {
-            font-size: 2rem;
-        }
+    .exp__title h2 {
+        font-size: 2rem;
+    }
 }
 
 @media screen and (max-width: 415px) {
