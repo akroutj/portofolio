@@ -49,11 +49,12 @@ function topFunction() {
 }
 
 // Obtenez une référence à la div "project__box" et "project__box__overlay"
-var projectBox = document.querySelector(".project__box");
-var projectOverlay = document.querySelector(".project__box__overlay");
+let projectBox = document.querySelector(".project__box");
+let projectOverlay = document.querySelector(".project__box__overlay");
 
 // Ajoutez un gestionnaire d'événement de clic à la div "project__box"
 projectBox.addEventListener("click", function open() {
   // Appliquez la transformation "translateY(0px)" à la div "project__box__overlay"
-  projectOverlay.style.transform = "translateY(0px)";
+  // projectOverlay.style.transform = "translateY(0px)";
+  projectOverlay.style.backgroundColor = "red";
 });
