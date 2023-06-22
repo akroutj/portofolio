@@ -47,3 +47,13 @@ function topFunction() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
+
+// Obtenez une référence à la div "project__box" et "project__box__overlay"
+var projectBox = document.querySelector(".project__box");
+var projectOverlay = document.querySelector(".project__box__overlay");
+
+// Ajoutez un gestionnaire d'événement de clic à la div "project__box"
+projectBox.addEventListener("click", function open() {
+  // Appliquez la transformation "translateY(0px)" à la div "project__box__overlay"
+  projectOverlay.style.transform = "translateY(0px)";
+});
