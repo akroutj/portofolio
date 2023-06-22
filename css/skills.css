@@ -63,8 +63,8 @@
 }
 
 .emptybar {
-    position: absolute;
-    background-color: var(--primary);
+    /* position: absolute;
+    background-color: var(--primary); */
     width: 100%;
     height: 100%;
 }
