@@ -132,6 +132,12 @@
 @media screen and (max-width: 948px) {
 
 
+    .interests > .reveal {
+        opacity: 1;
+        transform: translateY(0px);
+        transition: 1.2s cubic-bezier(0, .61, .5, 1);
+    }
+
     
         .interests__boxes{
             display: flex;
