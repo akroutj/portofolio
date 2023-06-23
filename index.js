@@ -1,3 +1,5 @@
+// SCROLL EFFECTS
+
 const ratio = 0.5;
 const options = {
   root: null,
@@ -53,21 +55,16 @@ function topFunction() {
 var activeOverlay = null;
 
 function handleProjectClick(event) {
-  // Vérifiez la largeur de l'écran
   if (window.innerWidth <= 600) {
     var currentOverlay = event.currentTarget.querySelector(
       ".project__box__overlay"
     );
 
-    // Réinitialiser l'état de la div précédemment active
     if (activeOverlay) {
       activeOverlay.style.transform = "translateY(250px)";
     }
 
-    // Appliquer la transformation à la nouvelle div
     currentOverlay.style.transform = "translateY(0px)";
-
-    // Mettre à jour la référence à la div active
     activeOverlay = currentOverlay;
   }
 }
@@ -77,19 +74,14 @@ function handleProjectClick(event) {
 var flipCardBack = null;
 
 function flipCard(event) {
-  // Vérifiez la largeur de l'écran
   if (window.innerWidth <= 600) {
     var currentBackCard = event.currentTarget.querySelector(".card-back");
 
-    // Réinitialiser l'état de la div précédemment active
     if (flipCardBack) {
       flipCardBack.style.transform = "translateY(180px)";
     }
 
-    // Appliquer la transformation à la nouvelle div
     currentBackCard.style.transform = "rotateX(0px)";
-
-    // Mettre à jour la référence à la div active
     flipCardBack = currentBackCard;
   }
 }
