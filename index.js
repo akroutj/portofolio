@@ -48,16 +48,14 @@ function topFunction() {
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
 
-// Obtenez une référence à la div "project__box" et "project__box__overlay"
-let projectBox = document.querySelector(".project__box");
-let projectOverlay = document.querySelector(".project__box__overlay");
+function handleProjectClick(event) {
+  // Vérifiez la largeur de l'écran
+  if (window.innerWidth <= 600) {
+    // Obtenez la div "project__box__overlay" correspondante
+    var overlay = event.currentTarget.querySelector(".project__box__overlay");
 
-if (window.innerWidth <= 600) {
-  // Ajoutez un gestionnaire d'événement de clic à la div "project__box"
-  projectBox.addEventListener("click", function open() {
-    // Appliquez la transformation "translateY(0px)" à la div "project__box__overlay"
-
-    projectOverlay.style.transform = "translateY(0px)";
-    projectOverlay.style.backgroundColor = "red";
-  });
+    // Appliquez la transformation "translateY(0px)" à la div "project__box__overlay" correspondante
+    overlay.style.transform = "translateY(0px)";
+    // overlay.style.backgroundColor = "red";
+  }
 }
