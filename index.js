@@ -48,14 +48,24 @@ function topFunction() {
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
 
+var activeOverlay = null;
+
 function handleProjectClick(event) {
   // Vérifiez la largeur de l'écran
   if (window.innerWidth <= 600) {
-    // Obtenez la div "project__box__overlay" correspondante
-    var overlay = event.currentTarget.querySelector(".project__box__overlay");
+    var currentOverlay = event.currentTarget.querySelector(
+      ".project__box__overlay"
+    );
 
-    // Appliquez la transformation "translateY(0px)" à la div "project__box__overlay" correspondante
-    overlay.style.transform = "translateY(0px)";
-    // overlay.style.backgroundColor = "red";
+    // Réinitialiser l'état de la div précédemment active
+    if (activeOverlay) {
+      activeOverlay.style.transform = "translateY(250px)";
+    }
+
+    // Appliquer la transformation à la nouvelle div
+    currentOverlay.style.transform = "translateY(0px)";
+
+    // Mettre à jour la référence à la div active
+    activeOverlay = currentOverlay;
   }
 }
