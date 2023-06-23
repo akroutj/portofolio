@@ -55,6 +55,8 @@ let projectOverlay = document.querySelector(".project__box__overlay");
 // Ajoutez un gestionnaire d'événement de clic à la div "project__box"
 projectBox.addEventListener("click", function open() {
   // Appliquez la transformation "translateY(0px)" à la div "project__box__overlay"
-  // projectOverlay.style.transform = "translateY(0px)";
-  projectOverlay.style.backgroundColor = "red";
+  if (window.innerWidth <= 600) {
+    projectOverlay.style.transform = "translateY(0px)";
+    projectOverlay.style.backgroundColor = "red";
+  }
 });
