@@ -52,11 +52,12 @@ function topFunction() {
 let projectBox = document.querySelector(".project__box");
 let projectOverlay = document.querySelector(".project__box__overlay");
 
-// Ajoutez un gestionnaire d'événement de clic à la div "project__box"
-projectBox.addEventListener("click", function open() {
-  // Appliquez la transformation "translateY(0px)" à la div "project__box__overlay"
-  if (window.innerWidth <= 600) {
+if (window.innerWidth <= 600) {
+  // Ajoutez un gestionnaire d'événement de clic à la div "project__box"
+  projectBox.addEventListener("click", function open() {
+    // Appliquez la transformation "translateY(0px)" à la div "project__box__overlay"
+
     projectOverlay.style.transform = "translateY(0px)";
     projectOverlay.style.backgroundColor = "red";
-  }
-});
+  });
+}
