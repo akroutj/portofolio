@@ -48,6 +48,8 @@ function topFunction() {
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
 
+//PROJECT CARD ON CLICK (overlay)
+
 var activeOverlay = null;
 
 function handleProjectClick(event) {
@@ -67,5 +69,27 @@ function handleProjectClick(event) {
 
     // Mettre à jour la référence à la div active
     activeOverlay = currentOverlay;
+  }
+}
+
+//EXP CARD ON CLICK (flip-card)
+
+var flipCardBack = null;
+
+function flipCard(event) {
+  // Vérifiez la largeur de l'écran
+  if (window.innerWidth <= 600) {
+    var currentBackCard = event.currentTarget.querySelector(".card-back");
+
+    // Réinitialiser l'état de la div précédemment active
+    if (flipCardBack) {
+      flipCardBack.style.transform = "translateY(180px)";
+    }
+
+    // Appliquer la transformation à la nouvelle div
+    currentBackCard.style.transform = "rotateX(0px)";
+
+    // Mettre à jour la référence à la div active
+    flipCardBack = currentBackCard;
   }
 }
